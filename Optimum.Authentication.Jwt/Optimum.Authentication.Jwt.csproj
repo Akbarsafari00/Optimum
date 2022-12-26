@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Copyright>Hania Copyright</Copyright>
+		<Company>Hania</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageTags>message-brocker,messaging,rabbitmq,kafka</PackageTags>
+		<Authors>Akbar Ahmadi Saray</Authors>
+		<RootNamespace>Optimum.Messaging</RootNamespace>
+		<Version>1.0.1</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="C:\Users\hania\Music\icon.png" Link="icon.png">
+        <PackagePath>\</PackagePath>
+        <Pack>True</Pack>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Optimum\Optimum.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    </ItemGroup>
+
+</Project>

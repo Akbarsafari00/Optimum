@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Optimum.Authentication.Jwt\Optimum.Authentication.Jwt.csproj" />
+      <ProjectReference Include="..\Optimum.Cqrs\Optimum.Cqrs.csproj" />
+      <ProjectReference Include="..\Optimum.Http\Optimum.Http.csproj" />
+      <ProjectReference Include="..\Optimum.JobService\Optimum.Hangfire.csproj" />
+      <ProjectReference Include="..\Optimum.Messaging.Kafka\Optimum.Messaging.Kafka.csproj" />
+      <ProjectReference Include="..\Optimum.Messaging.Outbox\Optimum.Messaging.Outbox.csproj" />
+      <ProjectReference Include="..\Optimum.Messaging.RabbitMQ\Optimum.Messaging.RabbitMQ.csproj" />
+      <ProjectReference Include="..\Optimum.Messaging\Optimum.Messaging.csproj" />
+      <ProjectReference Include="..\Optimum.Persistence.MongoDB\Optimum.Persistence.MongoDB.csproj" />
+      <ProjectReference Include="..\Optimum.Persistence\Optimum.Persistence.csproj" />
+      <ProjectReference Include="..\Optimum.ServiceDiscovery\Optimum.ServiceDiscovery.csproj" />
+      <ProjectReference Include="..\Optimum.ServiceDiscovery\Optimum.ServiceDiscoveryClient.csproj" />
+      <ProjectReference Include="..\Optimum.Swagger\Optimum.Swagger.csproj" />
+      <ProjectReference Include="..\Optimum\Optimum.csproj" />
+    </ItemGroup>
+
+</Project>

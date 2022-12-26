@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Copyright>Hania Copyright</Copyright>
+		<Company>Hania</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageTags>service-discovery</PackageTags>
+		<Authors>Akbar Ahmadi Saray</Authors>
+		<Version>1.0.1</Version>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\hania\Music\icon.png" Link="icon.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Optimum\Optimum.csproj" />
+  </ItemGroup>
+
+</Project>
